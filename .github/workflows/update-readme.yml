@@ -1,0 +1,44 @@
+name: Update profile README
+
+# 블로그 레포가 쌓는 네이버 글 목록(naver_posts.json)을 읽어
+# README.md의 '최근 글'을 갱신하고, 바뀐 경우에만 커밋합니다.
+on:
+  schedule:
+    - cron: '47 */3 * * *' # 3시간마다 47분(UTC). 블로그 레포 동기화(매시 17분) 뒤에 돌도록 비켜 둡니다.
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'beaten-by-the-market/beaten-by-the-market'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Update README
+        run: python -I scripts/update_readme.py
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          git add -- README.md
+          if git diff --cached --quiet; then
+            echo "README unchanged."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "자동: 네이버 블로그 최근 글 갱신"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
