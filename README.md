@@ -13,6 +13,8 @@
 ### 최근 글
 
 <!-- NAVER-POSTS:START -->
+- 2026-11-19 · [남의 빚에 맡긴 대주주 주식: 담보를 맡긴 상장사의 12%](https://m.blog.naver.com/beatenbythemarket/224482964442) <sub>데이터로 들여다본 시장</sub>
+- 2026-11-19 · [담보에 묶인 4년 반, 케어랩스 경영권은 왜 끝내 매각됐나](https://m.blog.naver.com/beatenbythemarket/224482936839) <sub>지분공시로 따라간 딜</sub>
 - 2026-11-18 · [대주주 주식은 왜 법원에 공탁될까: 상속세·증여세를 나눠 내는 동안의 담보](https://m.blog.naver.com/beatenbythemarket/224481819839) <sub>데이터로 들여다본 시장</sub>
 - 2026-11-17 · [경영권과 함께 넘어간 금고: 이니텍 현금 876억 원이 거쳐 간 곳](https://m.blog.naver.com/beatenbythemarket/224480421338) <sub>지분공시로 따라간 딜</sub>
 - 2026-11-14 · [상장사 인수금융 ②: 대량보유보고서로 본 인수 대금, 어디서 얼마나 빌렸나](https://m.blog.naver.com/beatenbythemarket/224476340322) <sub>데이터로 들여다본 시장</sub>
@@ -21,11 +23,11 @@
 - 2026-11-10 · [대주주 주식 반대매매 213곳, 공시는 세 주체가 따로 냈다](https://m.blog.naver.com/beatenbythemarket/224472262742) <sub>데이터로 들여다본 시장</sub>
 - 2026-11-10 · [대주주 주식담보대출 2,792건, 어디서 빌렸느냐가 조건을 갈랐다](https://m.blog.naver.com/beatenbythemarket/224470960009) <sub>데이터로 들여다본 시장</sub>
 - 2026-11-09 · [가진 주식의 90% 넘게 담보 맡긴 최대주주 56곳, 사정은 저마다 달랐다](https://m.blog.naver.com/beatenbythemarket/224470344835) <sub>데이터로 들여다본 시장</sub>
+
+<details><summary>이전 글 25편 더 보기</summary>
+
 - 2026-11-09 · [IPO를 펼쳐보면: 이어서 읽으면 좋은 글](https://m.blog.naver.com/beatenbythemarket/224469682319) <sub>IPO를 펼쳐보면</sub>
 - 2026-11-09 · [자회사 상장과 배당 환원: 현금이냐 주식이냐, 모두냐 일반주주만이냐](https://m.blog.naver.com/beatenbythemarket/224469672277) <sub>2부 투자위험요소</sub>
-
-<details><summary>이전 글 23편 더 보기</summary>
-
 - 2026-11-07 · [대주주가 주식을 맡긴 상장사 752곳, 1%대부터 80%대까지](https://m.blog.naver.com/beatenbythemarket/224468538491) <sub>데이터로 들여다본 시장</sub>
 - 2026-11-07 · [자회사 상장을 모회사 주주에게 물었더니: 99.5%가 찬성해도 겨우 넘었다](https://m.blog.naver.com/beatenbythemarket/224468000519) <sub>2부 투자위험요소</sub>
 - 2026-11-06 · [매도했는데 지분은 그대로: 대출에 가까웠던 한미 일가의 환매조건부 매도](https://m.blog.naver.com/beatenbythemarket/224466769488) <sub>지분공시로 따라간 딜</sub>
