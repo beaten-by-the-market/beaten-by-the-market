@@ -23,7 +23,7 @@ SOURCE_URL = ("https://raw.githubusercontent.com/beaten-by-the-market/"
 README = Path(__file__).resolve().parents[1] / "README.md"
 START = "<!-- NAVER-POSTS:START -->"
 END = "<!-- NAVER-POSTS:END -->"
-VISIBLE = 10  # 펼쳐서 보여 줄 최신 글 수. 나머지는 접어 둡니다.
+VISIBLE = 5  # 보여 줄 최신 글 수. 나머지는 README의 '전체 글 목록' 링크로 봅니다.
 POST_URL = re.compile(r"https://m\.blog\.naver\.com/beatenbythemarket/\d+")
 MAX_BYTES = 5_000_000
 
@@ -61,14 +61,7 @@ def line(post):
 
 def render(posts):
     posts = sorted(posts, key=lambda p: (p.get("date") or "", p["url"]), reverse=True)
-    lines = [line(p) for p in posts[:VISIBLE]]
-    rest = posts[VISIBLE:]
-    if rest:
-        # <summary> 뒤 빈 줄이 있어야 GitHub이 안쪽 목록을 마크다운으로 렌더링합니다.
-        lines += ["", f"<details><summary>이전 글 {len(rest)}편 더 보기</summary>", ""]
-        lines += [line(p) for p in rest]
-        lines += ["", "</details>"]
-    return "\n".join(lines)
+    return "\n".join(line(p) for p in posts[:VISIBLE])
 
 
 def main():
